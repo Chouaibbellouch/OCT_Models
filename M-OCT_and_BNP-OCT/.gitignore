@@ -1,0 +1,11 @@
+.vscode
+.DS_Store
+octenv
+.ipynb_checkpoints
+*__pycache__
+data/rosen*
+optimaltree-test-program
+*.zip
+oct
+*.png
+*_iris

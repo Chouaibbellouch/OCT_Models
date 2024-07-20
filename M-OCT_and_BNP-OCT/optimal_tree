@@ -1,0 +1,22 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+graph [ranksep=equally, splines=polyline] ;
+edge [fontname="helvetica"] ;
+0 [label="node #0\n3.6216 <= -1.174\ngini = 0.496\nsamples = 991\nvalue = [533158, 448923]\nclass = 0", fillcolor="#104117124"] ;
+1 [label="node #1\ngini = 0.215\nsamples = 326\nvalue = [13040, 93236]\nclass = 1", fillcolor="#5e03691a3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\n3.6216 <= 0.851\ngini = 0.376\nsamples = 665\nvalue = [331170, 111055]\nclass = 0", fillcolor="#1331fa28a"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="node #3\n8.6661 <= 5.235\ngini = 0.474\nsamples = 223\nvalue = [19178, 30551]\nclass = 1", fillcolor="#17613a10f"] ;
+2 -> 3 ;
+4 [label="node #4\ngini = 0.34\nsamples = 175\nvalue = [6650, 23975]\nclass = 1", fillcolor="#311205145"] ;
+3 -> 4 ;
+5 [label="node #5\ngini = 0.0\nsamples = 48\nvalue = [2304, 0]\nclass = 0", fillcolor="#-3e1-16a1-2421"] ;
+3 -> 5 ;
+6 [label="node #6\ngini = 0.127\nsamples = 442\nvalue = [182104, 13260]\nclass = 0", fillcolor="#25577bb2f"] ;
+2 -> 6 ;
+{rank=same ; 0} ;
+{rank=same ; 2} ;
+{rank=same ; 3} ;
+{rank=same ; 1; 4; 5; 6} ;
+}
